@@ -1,0 +1,8 @@
+
+k
+squid:S106!"9Replace this use of System.out or System.err by a logger.(Áªø8÷Úßõ‰-HMRMAJORZ
+CODE_SMELL
+zsquid:CallToDeprecatedMethod"6Remove this use of "XmlBeanFactory"; it is deprecated.(¾Ã™ú8÷Úßõ‰-HORMINORZ
+CODE_SMELL
+zsquid:CallToDeprecatedMethod"6Remove this use of "XmlBeanFactory"; it is deprecated.(¾Ã™ú8÷Úßõ‰-HNRMINORZ
+CODE_SMELL

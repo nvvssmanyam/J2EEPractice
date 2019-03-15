@@ -1,0 +1,7 @@
+
+squid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Á¢Á’ûÿÿÿÿH„RMINORZ
+CODE_SMELL
+ysquid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(Á¢Á’ûÿÿÿÿH…RMAJORZ
+CODE_SMELL
+psquid:S1610">Convert the abstract class "IAnimalFactory" into an interface.(÷ãöµÿÿÿÿÿH†RMINORZ
+CODE_SMELL
