@@ -2,7 +2,6 @@ package com.practice.threads;
 
 import java.util.concurrent.CountDownLatch;
 
-
 /*
  *   Tut: https://dzone.com/articles/java-concurrency-count-down-latches
  */

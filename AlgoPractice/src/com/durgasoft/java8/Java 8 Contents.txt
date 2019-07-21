@@ -75,6 +75,15 @@ i) Negate - Negitive condition
 ii) and - perform AND operation b/w two statements
 iii) or - perform OR opeation b/w two statements
 
+Function: To check any condition and return any type of object
+
+Syn: interface Function<T, R> {
+		R apply(T t);
+	 } 
+
+It has some default methods to join multiple functions
+i) andThen - Perform first and function then Then function
+
 
 
 
