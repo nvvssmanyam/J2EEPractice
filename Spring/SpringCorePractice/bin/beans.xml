@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+	<bean id="empWithSetters"
+		class="org.packt.Spring.chapter1.setterinjection.Employee">
+		<property name="name" value="Ram" />
+		<property name="age" value="20" />
+		<property name="empId" value="1605" />
+	</bean>
+
+	<bean id="empWithConstructor"
+		class="org.packt.Spring.chapter1.setterinjection.Employee">
+		<constructor-arg value="19" index="1" />
+		<constructor-arg value="Sita" index="0" />
+		<constructor-arg value="2105" index="2" />
+	</bean>
+
+	<bean id="empServiceWithSetter"
+		class="org.packt.Spring.chapter1.setterinjection.EmployeeServiceImpl">
+		<property name="emp" ref="empWithSetters" />
+	</bean>
+
+	<bean id="empServiceWithConstructor"
+		class="org.packt.Spring.chapter1.setterinjection.EmployeeServiceImpl">
+		<property name="emp" ref="empWithConstructor" />
+	</bean>
+	
+	<!--  Injecting inner beans -->
+	<bean id="atm" class="org.packt.Spring.chapter1.setterinjection.ATM">
+		<property name="printer">
+			<bean class="org.packt.Spring.chapter1.setterinjection.Printer">
+				<property name="message" value="The balance information is printed by Printer for the account number"></property>
+			</bean>
+		</property>
+	</bean>
+
+	<!-- Bean inheritence -->
+	<bean id="indianEmployee" class="org.packt.Spring.chapter2.beaninheritance.Employee">
+		<property name="country" value="India"></property>
+	</bean>
+	<bean id="employeeBean" parent="indianEmployee">
+		<property name="employeeId" value="1065"></property>
+		<property name="employeeName" value="Ravi Kant Soni"></property>
+	</bean>
+
+</beans>

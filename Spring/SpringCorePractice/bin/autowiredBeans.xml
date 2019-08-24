@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!-- 	<bean id="empService" class="org.packt.Spring.chapter2.autowiring.EmployeeServiceImpl" autowire="byName"/>
+ -->	<bean id="empServiceByConstructor" class="org.packt.Spring.chapter2.autowiring.EmployeeServiceImpl" autowire="constructor"/>
+	
+	<!-- id and setter name should be same Ex: setEmp(Employee emp)  -->
+<!-- 	<bean id="emp" class="org.packt.Spring.chapter2.autowiring.Employee">
+		<property name="name" value="Raju"/>
+		<property name="age" value="29"/>
+		<property name="empId" value="2124"/>
+	</bean> -->
+	
+	<bean id="employee1" class="org.packt.Spring.chapter2.autowiring.Employee">
+		<constructor-arg value="Jittu"/>
+		<constructor-arg value="28"/>
+		<constructor-arg value="2125"/>
+	</bean>
+	
+	<bean id="employee2" class="org.packt.Spring.chapter2.autowiring.Employee">
+		<constructor-arg value="KAS"/>
+		<constructor-arg value="28"/>
+		<constructor-arg value="2124"/>
+	</bean>
+
+</beans>
