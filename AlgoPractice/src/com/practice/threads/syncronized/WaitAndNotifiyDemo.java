@@ -20,7 +20,7 @@ public class WaitAndNotifiyDemo {
 			System.out.println("Waiting for return key.");
 			scanner.nextLine();
 			System.out.println("Return key pressed.");
-			notifyAll();
+			notify();
 			Thread.sleep(5000);
 		}
 	}

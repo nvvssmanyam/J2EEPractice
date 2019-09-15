@@ -7,7 +7,7 @@ public class PrintNumbers {
 	private static String[] tensInText = { "", "Ten", "Twenty", "Thirty", "Fourty", "Fifty", "Sixty", "Seventy", "Eighty", "Ninety", "Hundred"};
 
 	public static void main(String[] args) {
-		printNumbersInText(11);
+		printNumbersInText(1);
 	}
 
 	private static void printNumbersInText(int num) {
