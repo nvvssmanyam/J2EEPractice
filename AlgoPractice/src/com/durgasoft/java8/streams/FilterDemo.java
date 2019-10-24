@@ -21,6 +21,7 @@ public class FilterDemo {
 //		List<Integer> evenNumList = list.stream().filter(n -> n%2 == 0).collect(Collectors.toList());
 		
 		System.out.println(list.stream().filter(n -> n%2 == 0).map(n -> n+10).collect(Collectors.toList()));
+		System.out.println(list.stream().filter(n -> n%2 == 0).mapToInt(n -> n+10).sum());
 		
 //		evenNumList.stream().forEach((n)->System.out.println(n));
 //		System.out.println("Even Numbers list :: "+evenNumList);

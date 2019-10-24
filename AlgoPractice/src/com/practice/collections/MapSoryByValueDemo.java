@@ -20,6 +20,8 @@ public class MapSoryByValueDemo {
 		map.put(1, 50);
 		map.put(5, 10);
 		
+		System.out.println(map.get(10));
+		
 		List<Entry<Integer, Integer>> list = new ArrayList<>(map.entrySet());
 		
 		Comparator<Entry<Integer, Integer>> compartor = new Comparator<Map.Entry<Integer,Integer>>() {
