@@ -1,0 +1,93 @@
+Contents
+--------
+
+1) Lambda Expressions
+2) Functional Interfcae
+3) Default mehtods
+4) Static methods
+
+Lambda Expression:
+------------------
+It is an anonymous function to bring benfits of functional programming in Java.
+
+Anonymous means i) No function name
+				ii) No return type
+				iii) No access specifiers
+				
+Ex: 
+
+public void me() {
+	System.out.println("Hello");
+}
+
+to
+
+() -> System.out.println("Hello");
+
+Removed function name, return type and Access specifier
+
+Function Interface:
+-------------------
+An interface which contains only single abstract mehtod (SAM)
+
+Ex:
+	Runnable --> only run()
+	Callable --> only call()
+	Comparable --> only compareTo()
+	
+Note: It can also can contain default/static methods
+
+@FunctionalInterface annotation will restrict interface should contain SAM
+
+
+Default Methods:
+----------------
+
+default --> keyword introduce in java8
+
+Interface default methods by default available in child classes, no mandate to override and we can override also
+
+Ex: DefaultMethodsDemo, DefaultMethosInMultipleInheritanceDemo
+
+Static Methods:
+---------------
+
+Just to define general utility methods no where related to object state
+Overriding concept not applicable for static methods
+
+We can define main() method as well in interface
+
+Note: Interface static methods by default not available to the implementation class
+
+Ex: StaticMethodsDemo
+
+Predefined Functional Interfces (java.util.functions):
+------------------------------------------------------
+
+Predicate: Pre-defined FI, to perform a conditional checks
+
+Syn: interface Predicate<T> {
+		boolean test(T t);
+	 }
+	 
+It has some default methods to join multiple predicates
+i) Negate - Negitive condition
+ii) and - perform AND operation b/w two statements
+iii) or - perform OR opeation b/w two statements
+
+Function: To check any condition and return any type of object
+
+Syn: interface Function<T, R> {
+		R apply(T t);
+	 } 
+
+It has some default methods to join multiple functions
+i) andThen - Perform first and function then Then function
+
+
+
+
+
+
+
+

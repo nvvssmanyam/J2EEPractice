@@ -20,7 +20,7 @@ public class BubbleSortDemo {
 		System.out.println(Arrays.toString(sortedArr));
 	}
 
-	private static int[] doSort(int[] arr) {
+	protected static int[] doSort(int[] arr) {
 		int len = arr.length;
 		int temp;
 		
