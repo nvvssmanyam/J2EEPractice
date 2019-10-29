@@ -2,19 +2,29 @@ package com.in28minutes.microservices.currencyexchangeservice.beans;
 
 import java.math.BigDecimal;
 
-public class ExchageValue {
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
+@Entity
+public class ExchangeValue {
+
+	@Id
 	private Long id;
+	
+	@Column(name="currency_from")
 	private String from;
+	
+	@Column(name="currency_to")
 	private String to;
 	private BigDecimal conversionMultiple;
 	private int port;
 
-	public ExchageValue() {
+	public ExchangeValue() {
 
 	}
 
-	public ExchageValue(Long id, String from, String to, BigDecimal conversionMultiple) {
+	public ExchangeValue(Long id, String from, String to, BigDecimal conversionMultiple) {
 		super();
 		this.id = id;
 		this.from = from;
