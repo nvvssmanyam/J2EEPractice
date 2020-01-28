@@ -1,5 +1,7 @@
 package com.in28minutes.jpa.hibernate.AdvancedJPA.repository;
 
+import java.util.List;
+
 import javax.persistence.EntityManager;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,6 +20,12 @@ public class StudentRepository {
 	
 	public Student findById(long id) {
 		return em.find(Student.class, id);
+	}
+	
+	public List<Student> getAllStudents() {
+		
+		
+		return null;
 	}
 	
 	public Student saveStudentWithPassport(Student student) {

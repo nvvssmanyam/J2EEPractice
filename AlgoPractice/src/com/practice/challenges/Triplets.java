@@ -6,8 +6,8 @@ public class Triplets {
 
 	public static void main(String[] args) {
 		
-		int[] arr = {2,3,4,1,6,5};
-		findTriplets(arr, 10);
+		int[] arr = {2,3,4,1,5};
+		findTriplets(arr, 11);
 		
 	}
 

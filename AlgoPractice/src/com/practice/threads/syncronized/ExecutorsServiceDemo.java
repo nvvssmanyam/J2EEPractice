@@ -44,9 +44,10 @@ public class ExecutorsServiceDemo {
 		 *  java.util.concurrent.RejectedExecutionException: 
 		 *  Task java.util.concurrent.FutureTask@1f96302 rejected from java.util.concurrent.ThreadPoolExecutor@14eac69[Shutting down, pool size = 2, active threads = 2, queued tasks = 3, completed tasks = 0]
 		 *  
-		 *  If we added any task after shutdown, it will give the aboce exception
+		 *  If we added any task after shutdown, it will give the above exception
 		 */
-//		executor.submit(new Process(5));
+		
+		//	executor.submit(new Process(5));
 		
 		/*
 		 *  Blocks until all tasks have completed execution after a shutdown request, or the timeout occurs, or the current thread is interrupted, whichever happens first.

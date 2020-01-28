@@ -2,7 +2,7 @@ package com.algo.sorting;
 
 import java.util.Arrays;
 
-interface A {
+interface AA {
 	void m1();
 }
 
@@ -12,7 +12,7 @@ class C {
 	}
 }
 
-public class Test extends C implements A {
+public class Test extends C implements AA {
 
 	public static void main(String[] args) {
 		

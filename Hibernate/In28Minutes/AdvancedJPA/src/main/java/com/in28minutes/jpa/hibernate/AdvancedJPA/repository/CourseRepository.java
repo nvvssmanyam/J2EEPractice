@@ -1,5 +1,7 @@
 package com.in28minutes.jpa.hibernate.AdvancedJPA.repository;
 
+import java.util.List;
+
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
@@ -21,6 +23,10 @@ public class CourseRepository {
 	
 	public Course findById(long id) {
 		return em.find(Course.class, id);
+	}
+	
+	public List<Course> getAll() {
+		return em.createNamedQuery("query_all_courses", Course.class).getResultList();
 	}
 	
 	public Course save(Course course) {
