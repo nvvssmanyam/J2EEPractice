@@ -1,3 +1,5 @@
+package com.apnacollege.trees;
+
 public class BinaryTreeDemo {
 
     static class Node {
@@ -14,14 +16,16 @@ public class BinaryTreeDemo {
 
     static class BinaryTree {
         static int index = -1;
-        static int buildTree(int[] nodes) {
+        static Node buildTree(int[] nodes) {
             index++;
-            if(nodes[index] == -1){
+            int data = nodes[index];
+            if(data == -1){
                 return null;
             }
-            Node root = new Node(nodes[index]);
-            root.left = new Node(buildTree(nodes));
-            root.right = new Node(buildTree(nodes));
+            Node root = new Node(data);
+            root.left = buildTree(nodes);
+            root.right = buildTree(nodes);
+            return root;
         }
 
     }
